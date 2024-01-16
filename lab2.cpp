@@ -8,23 +8,21 @@ Point::Point()
     inputCoordinates();
 }
 
-Point::~Point() 
-{
-}
+Point::~Point() {}
 
 void Point::inputCoordinates() 
 {
-    cout << "Ââåä³òü êîîðäèíàòó x: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã³ x: ";
     cin >> x;
-    cout << "Ââåä³òü êîîðäèíàòó y: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã³ y: ";
     cin >> y;
-    cout << "Ââåä³òü êîîðäèíàòó z: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã³ z: ";
     cin >> z;
 }
 
 void Point::displayCoordinates() const 
 {
-    cout << "Êîîðäèíàòè òî÷êè " << id << ": (" << x << ", " << y << ", " << z << ")\n";
+    cout << "ÃŠÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã¨ Ã²Ã®Ã·ÃªÃ¨ " << id << ": (" << x << ", " << y << ", " << z << ")\n";
 }
 
 void Point::saveToFile(const string& fileName) const 
@@ -34,11 +32,11 @@ void Point::saveToFile(const string& fileName) const
     {
         outputFile << x << " " << y << " " << z << "\n";
         outputFile.close();
-        cout << "Äàí³ óñï³øíî çáåðåæåíî ó ôàéë.\n";
+        cout << "Ã„Ã Ã­Â³ Ã³Ã±Ã¯Â³Ã¸Ã­Ã® Ã§Ã¡Ã¥Ã°Ã¥Ã¦Ã¥Ã­Ã® Ã³ Ã´Ã Ã©Ã«.\n";
     }
     else 
     {
-        cerr << "Íå âäàëîñÿ â³äêðèòè ôàéë.\n";
+        cerr << "ÃÃ¥ Ã¢Ã¤Ã Ã«Ã®Ã±Ã¿ Ã¢Â³Ã¤ÃªÃ°Ã¨Ã²Ã¨ Ã´Ã Ã©Ã«.\n";
     }
 }
 
@@ -49,11 +47,11 @@ void Point::loadFromFile(const string& fileName)
     {
         inputFile >> x >> y >> z;
         inputFile.close();
-        cout << "Äàí³ óñï³øíî çàâàíòàæåíî ç ôàéëó.\n";
+        cout << "Ã„Ã Ã­Â³ Ã³Ã±Ã¯Â³Ã¸Ã­Ã® Ã§Ã Ã¢Ã Ã­Ã²Ã Ã¦Ã¥Ã­Ã® Ã§ Ã´Ã Ã©Ã«Ã³.\n";
     }
     else 
     {
-        cerr << "Íå âäàëîñÿ â³äêðèòè ôàéë.\n";
+        cerr << "ÃÃ¥ Ã¢Ã¤Ã Ã«Ã®Ã±Ã¿ Ã¢Â³Ã¤ÃªÃ°Ã¨Ã²Ã¨ Ã´Ã Ã©Ã«.\n";
     }
 }
 
