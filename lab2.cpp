@@ -8,9 +8,7 @@ Point::Point()
     inputCoordinates();
 }
 
-Point::~Point() 
-{
-}
+Point::~Point() {}
 
 void Point::inputCoordinates() 
 {
